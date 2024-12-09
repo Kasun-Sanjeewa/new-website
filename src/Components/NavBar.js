@@ -10,7 +10,7 @@ export default function NavBar() {
     const handleClick = () => {
         setclick(!click)
     }
-    //Hii
+
 
     return (
         <>
