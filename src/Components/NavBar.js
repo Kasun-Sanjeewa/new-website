@@ -12,6 +12,11 @@ export default function NavBar() {
     }
 
 
+    const closeMobileMenu = () => {
+        setclick(false);
+    }
+
+
     return (
         <>
             <nav className='navBar'>
@@ -24,6 +29,14 @@ export default function NavBar() {
 
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
                     </div>
+
+                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                        <li className='nav-items'>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                                Home
+                            </Link>
+                        </li>
+                    </ul>
 
                 </div>
 
