@@ -11,7 +11,7 @@ export default function HeroSection() {
             <p>Makes Your Dreams Here</p>
 
             <div className='hero-btns'>
-                <Button className="btns" buttonStyles='btn-outline' buttonSize='btn-large'>Get Started</Button>
+                <Button className="btn" buttonStyles='btn-outline' buttonSize='btn-large'>Get Started</Button>
 
             </div>
 
