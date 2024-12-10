@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import Button from './Button';
 
 export default function NavBar() {
 
@@ -56,7 +57,7 @@ export default function NavBar() {
                         </li>
 
                     </ul>
-
+                    {button && <Button buttonStyle='btn--outline'>Sign up</Button>}
                 </div>
 
             </nav>
