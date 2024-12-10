@@ -64,7 +64,7 @@ export default function NavBar() {
                         </li>
 
                         <li className='nav-items'>
-                            <Link to='/sign-up' className='nav-links sign-up' onClick={closeMobileMenu}>
+                            <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 Sign Up
                             </Link>
                         </li>
