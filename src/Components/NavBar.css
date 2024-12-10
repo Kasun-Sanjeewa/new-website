@@ -96,6 +96,8 @@
         width: 100%;
         display: block;
         color: #fff;
+        background-color: #151518;
+        scale: 85%;
     }
 
     .nav-links:hover {
