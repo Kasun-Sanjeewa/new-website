@@ -1,3 +1,4 @@
+/* Fullscreen video styling */
 video {
     object-fit: cover;
     width: 100%;
@@ -6,6 +7,7 @@ video {
     position: fixed;
 }
 
+/* Hero section container */
 .hero-container {
     height: 100vh;
     width: 100%;
@@ -17,6 +19,7 @@ video {
     object-fit: contain;
 }
 
+/* Hero text */
 .hero-container>h1 {
     color: #fff;
     font-size: 100px;
@@ -30,21 +33,31 @@ video {
     font-family: cursive;
 }
 
+/* Button container */
 .hero-btns {
     margin-top: 32px;
 }
 
-
-
+/* Buttons */
 .hero-btns .btn {
     margin: 6px;
+    padding: 12px 24px;
+    /* Consistent padding for equal sizes */
+    font-size: 16px;
+    text-align: center;
+    min-width: 160px;
+    /* Ensures equal width */
+    display: inline-block;
+    box-sizing: border-box;
+    /* Includes padding and borders in width */
 }
 
-.fa-play-circle {
+/* Icon inside button */
+.hero-btns .btn i {
     margin-left: 10px;
 }
 
-
+/* Responsive styling */
 @media screen and (max-width: 960px) {
     .hero-container>h1 {
         font-size: 70px;
