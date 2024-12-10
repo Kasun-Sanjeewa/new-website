@@ -2,10 +2,23 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import Button from './Button';
+import "./NavBar.css"
 
 export default function NavBar() {
 
     const [click, setclick] = useState(false);
+
+    const [button, setButton] = useState(true);
+
+    const showButton = () => {
+        if (window.innerWidth <= 960) {
+            setButton(false);
+        } else {
+            setButton(true);
+        }
+    }
+
+    window.addEventListener('resize', showButton)
 
 
     const handleClick = () => {
@@ -57,7 +70,8 @@ export default function NavBar() {
                         </li>
 
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Sign up</Button>}
+                    {button && <Button buttonStyles='btn-outline'>Sign up</Button>}
+
                 </div>
 
             </nav>
