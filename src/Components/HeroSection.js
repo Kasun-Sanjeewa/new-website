@@ -12,6 +12,7 @@ export default function HeroSection() {
 
             <div className='hero-btns'>
                 <Button className="btn" buttonStyles='btn-outline' buttonSize='btn-large'>Get Started</Button>
+                <Button className="btn" buttonStyles='btn-primary' buttonSize='btn-large'>Watch Here <i className='far fa-play-circle' /></Button>
 
             </div>
 
